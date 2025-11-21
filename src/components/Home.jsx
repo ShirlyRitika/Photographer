@@ -1,31 +1,34 @@
 import React from "react";
 import heroImg from "../assets/Rectangle 34624577.png";
-import person from "../assets/image 198.png";
+import secondHeroImg from "../assets/image 198.png";
+
 function Hero() {
   return (
     <section className="hero-section">
       <div className="hero-left">
         <img src={heroImg} alt="photographer" className="hero-photo" />
-        <img src="{person}" alt="image" />
+        <img src={secondHeroImg} alt="side camera" className="hero-small-img" />
       </div>
 
       <div className="hero-right">
-        <p className="hero-name-small">ALEX VOLKAV </p>
+        <p className="hero-name-small">ALEX VOLKAV</p>
+
         <h1 className="hero-title">
-          Lorem ipsum dolor sit amet,
-          <br />
-          consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
         </h1>
-        <h1> ------------------ </h1>
+
+        <div className="hero-line"></div>
+
         <p className="hero-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
-          tincidunt sed posuere rhoncus, quis quam. Habitant morbi tristique
-          senectus et netus et malesuada fames ac turpis egestas.
+          tincidunt sed purus phasellus condimentum sed diam sem. Maecenas
+          fermentum ac aliquet felis.
         </p>
 
         <p className="hero-desc">
-          Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros nec
-          sem tempus, ut volutpat dolor consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Nunc, tincidunt sed purus
+          phasellus Lorem ipsum dolor sit amet, consectetur
         </p>
 
         <div className="hero-buttons">

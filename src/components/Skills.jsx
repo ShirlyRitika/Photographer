@@ -6,7 +6,10 @@ import tv from "../assets/game-icons_tv.png";
 function Skills() {
   return (
     <section className="skills-section">
-      <h2 className="section-heading">-----------My skills</h2>
+      <div className="line-heading">
+        <span className="line"></span>
+        <span className="line-text">My Skills</span>
+      </div>
 
       <div className="skills-row">
         <div className="skill-item">

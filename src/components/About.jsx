@@ -6,12 +6,17 @@ const About = () => {
   return (
     <section className="about-section">
       <div className="about-left">
-        <h2 className="section-heading">---------- About me</h2>
+        <div className="line-heading">
+          <span className="line"></span>
+          <span className="line-text">About me</span>
+        </div>
+
         <h2 className="section-heding-lorem">
           Lorem ipsum dolor sit amet <br />
           consectetur adipiscing elit.{" "}
         </h2>
-        <h2>-----------------------</h2>
+
+        <div className="hero-line"></div>
         <p className="about-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
           tincidunt sed purus phasellus condimentum sed diam sem. Maecenas
