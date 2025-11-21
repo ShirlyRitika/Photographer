@@ -1,39 +1,52 @@
 import React from "react";
 import heroImg from "../assets/Rectangle 34624577.png";
 import secondHeroImg from "../assets/image 198.png";
+import styles from "../styles/Home.module.css";
 
 function Hero() {
   return (
-    <section className="hero-section">
-      <div className="hero-left">
-        <img src={heroImg} alt="photographer" className="hero-photo" />
-        <img src={secondHeroImg} alt="side camera" className="hero-small-img" />
+    <section className={styles["hero-section"]}>
+      <div className={styles["hero-left"]}>
+        <img
+          src={heroImg}
+          alt="photographer"
+          className={styles["hero-photo"]}
+        />
+        <img
+          src={secondHeroImg}
+          alt="side camera"
+          className={styles["hero-small-img"]}
+        />
       </div>
 
-      <div className="hero-right">
-        <p className="hero-name-small">ALEX VOLKAV</p>
+      <div className={styles["hero-right"]}>
+        <p className={styles["hero-name-small"]}>ALEX VOLKAV</p>
 
-        <h1 className="hero-title">
+        <h1 className={styles["hero-title"]}>
           Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
         </h1>
 
-        <div className="hero-line"></div>
+        <div className={styles["hero-line"]}></div>
 
-        <p className="hero-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
-          tincidunt sed purus phasellus condimentum sed diam sem. Maecenas
-          fermentum ac aliquet felis.
+        <p className={styles["hero-desc"]}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Nunc,
+          tincidunt sed <br /> purus phasellus condimentum sed <br /> diam sem.
+          Maecenas fermentum ac aliquet felis.
         </p>
 
-        <p className="hero-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Nunc, tincidunt sed purus
-          phasellus Lorem ipsum dolor sit amet, consectetur
+        <p className={styles["hero-desc"]}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing <br /> Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. <br /> Nunc, tincidunt
+          sed purus phasellus Lorem ipsum dolor <br /> sit amet, consectetur
         </p>
 
-        <div className="hero-buttons">
-          <button className="btn primary-btn">About me</button>
-          <button className="btn outline-btn">Contact me</button>
+        <div className={styles["hero-buttons"]}>
+          <button className={`${styles.btn} ${styles["primary-btn"]}`}>
+            About me
+          </button>
+          <button className={`${styles.btn} ${styles["outline-btn"]}`}>
+            Contact me
+          </button>
         </div>
       </div>
     </section>

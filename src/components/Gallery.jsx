@@ -3,17 +3,18 @@ import g1 from "../assets/Rectangle 34624582.png";
 import g2 from "../assets/Rectangle 34624583.png";
 import g3 from "../assets/Rectangle 34624584.png";
 import g4 from "../assets/Rectangle 34624585.png";
+import styles from "../styles/Gallery.module.css";
 
 function Gallery() {
   return (
-    <section className="gallery-section">
-      <div className="line-heading">
-        <span className="line"></span>
-        <span className="line-text">My Gallery</span>
+    <section className={styles["gallery-section"]}>
+      <div className={styles["line-heading"]}>
+        <span className={styles["line"]}></span>
+        <span className={styles["line-text"]}>My Gallery</span>
       </div>
-      <br />
-      <div className="gallery-slider">
-        <div className="gallery-row">
+
+      <div className={styles["gallery-slider"]}>
+        <div className={styles["gallery-row"]}>
           <img src={g1} alt="gallery 1" />
           <img src={g2} alt="gallery 2" />
           <img src={g3} alt="gallery 3" />
@@ -21,7 +22,7 @@ function Gallery() {
         </div>
       </div>
 
-      <p className="gallery-caption">
+      <p className={styles["gallery-caption"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, tincidunt
         sed purus phasellus
         <br />
