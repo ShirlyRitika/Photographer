@@ -177,9 +177,6 @@
   }
 }
 
-/* =====================================================
-   KEEP DESKTOP LAYOUT for 721px – 1040px
-   ===================================================== */
 @media (max-width: 1040px) and (min-width: 721px) {
   .about-section {
     flex-direction: row;
