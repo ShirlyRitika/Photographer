@@ -71,13 +71,14 @@
 
 @media (max-width: 900px) {
   .gallery-slider {
-    width: 100vw;
+    width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    padding: 0;
   }
 
   .gallery-slider::-webkit-scrollbar {
@@ -86,22 +87,19 @@
 
   .gallery-row {
     display: flex;
-    gap: 14px;
+    gap: 16px;
+    padding: 10px 0;
     width: max-content;
-    padding: 10px;
   }
 
   .gallery-row img {
-    width: 85vw;
-    height: 260px;
+    width: 95vw;
+    max-width: 600px;
+    height: auto;
     flex-shrink: 0;
+    border-radius: 12px;
     scroll-snap-align: center;
     object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.2s ease;
-  }
-
-  .gallery-row img:active {
-    transform: scale(0.97);
   }
 }
+

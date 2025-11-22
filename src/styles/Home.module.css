@@ -105,21 +105,23 @@
   }
 
   .hero-photo {
-    width: 100%;
+    width: 80%;
     padding-top: 0;
   }
 
   .hero-small-img {
-    position: relative;
+    position:absolute;
+    padding-top:50px;
     right: 0;
+    left:200px;
     bottom: 0;
-    width: 100%;
-    margin-top: 15px;
+    width: 40%;
+    margin-top: 2px;
   }
 
   .hero-right {
     text-align: left;
-    padding: 0;
+    padding: 2px;
   }
 
   .hero-title {

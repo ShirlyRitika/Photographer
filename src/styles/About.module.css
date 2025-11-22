@@ -39,7 +39,7 @@
 }
 
 .about-main-img img {
-  width: 300px;
+  width: 310px;
   height: 200px;
   object-fit: cover;
   border-radius: 6px;
@@ -49,7 +49,7 @@
 }
 
 .about-side-images img:first-child {
-  width: 450px;
+  width: 380px;
   height: 330px;
   object-fit: cover;
   border-radius: 6px;
@@ -60,7 +60,7 @@
 }
 
 .about-side-images img:last-child {
-  width: 320px;
+  width: 318px;
   height: 250px;
   object-fit: cover;
   border-radius: 6px;
@@ -90,34 +90,44 @@
 
 @media (max-width: 900px) {
   .about-section {
+    display: flex;
     flex-direction: column;
-    padding: 20px;
-  }
-
-  .aboutHeading {
-    width: 100%;
-    margin-left: 0;
-    font-size: 24px;
+    gap: 20px;
+    overflow: hidden; 
   }
 
   .about-right {
     width: 100%;
-    height: auto;
-    position: relative;
+    max-width: 390px; 
+    margin: 0 auto;
   }
 
   .about-main-img img {
-    position: relative;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+  }
+
+  .about-side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
   }
 
   .about-side-images img {
-    position: relative;
     width: 100%;
     height: auto;
-    top: 0;
-    left: 0;
-    margin-top: 10px;
+    border-radius: 10px;
   }
+ .aboutHeading{
+   width: 500px;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 33px;
+  color: #ffffff;
+  font-family: "Poltawski Nowy", serif;
+  font-weight: 400;
+ }
 }
+
